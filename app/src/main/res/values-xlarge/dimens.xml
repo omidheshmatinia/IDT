@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_card_image">300dp</dimen>
+    <dimen name="height_image_link">250dp</dimen>
+</resources>

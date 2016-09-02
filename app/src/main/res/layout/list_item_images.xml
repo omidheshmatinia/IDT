@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_card">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/icon_rotated_owl" />
+
+        <TextView
+            android:id="@+id/item_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:maxLines="3"
+            android:background="#43f"
+            android:layout_alignParentBottom="true"
+            android:textColor="#fff"
+            android:ellipsize="marquee"
+            android:text="Please Enter Your Link"
+            android:gravity="center" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/item_fab_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@android:drawable/ic_dialog_email"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="false"
+            android:layout_above="@+id/item_text"
+            android:layout_marginBottom="-15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

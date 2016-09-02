@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="material_EditText" parent="Widget.AppCompat.EditText">
+        <item name="met_singleLineEllipsis">false</item>
+        <item name="met_hideUnderline">false</item>
+        <item name="met_clearButton">false</item>
+        <item name="met_floatingLabel">highlight</item>
+        <item name="met_baseColor">#0056d3</item>
+        <item name="met_primaryColor">@color/colorPrimary</item>
+        <item name="met_errorColor">#ddaa00</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ThemeMaterialButtonColor" parent="Base.Widget.AppCompat.Button">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+    </style>
+    <style name="ThemeMaterialButtonColorAccent" parent="Base.Widget.AppCompat.Button">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+    </style>
+
+</resources>
