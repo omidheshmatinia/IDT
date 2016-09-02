@@ -44,4 +44,21 @@ public class MyPreference {
     public void setLastUrl(String txt){
         mInstance.sf.edit().putString(mInstance.mContext.getString(R.string.pref_url_key),txt).commit();
     }
+
+    /**
+     * Indicate whether its first visit or not
+     * @return
+     */
+    public Boolean isFirstVisit(){
+        return mInstance.sf.getBoolean(mInstance.mContext.getString(R.string.pref_first_visit_key),true);
+    }
+
+
+    /**
+     * Change first visit status
+     * @return
+     */
+    public void setFirstVisit(Boolean type){
+        mInstance.sf.edit().putBoolean(mInstance.mContext.getString(R.string.pref_first_visit_key),type).commit();
+    }
 }

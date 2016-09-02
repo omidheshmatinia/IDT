@@ -10,7 +10,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 22
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.1"
     }
     buildTypes {
         release {
@@ -26,6 +26,7 @@ ext {
     BUTTER_KNIFE = '8.4.0'
     MATERIAL_EDIT_TEXT='2.1.4'
     NINE_OLD_ANDROID='2.4.0'
+    APP_INTRO='3.4.0'
 }
 
 dependencies {
@@ -43,5 +44,6 @@ dependencies {
     compile 'com.daimajia.easing:library:1.0.1@aar'
     compile "com.rengwuxian.materialedittext:library:${MATERIAL_EDIT_TEXT}"
     compile "com.nineoldandroids:library:${NINE_OLD_ANDROID}"
+    compile "com.github.paolorotolo:appintro:${APP_INTRO}"
 //    compile "com.makeramen:roundedimageview:${ROUNDED_IMAGEVIEW}"
 }
